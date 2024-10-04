@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+ }
+
+ body{
+    background-color: aliceblue;
+    text-transform: capitalize;
+    user-select:  none ;
+ }
+
+ .container{
+    min-height: 100vh;
+    padding: 0 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .fb-page{
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ .fb-page h1{
+    color: rgb(23, 23, 249);
+    font-size: 3rem;
+    margin-bottom: 5px;
+ }
+ .fb-page p{
+    font-size: 1.05rem;
+ }
+.fb-page .text{
+    margin-bottom: 50px;
+}
+ form{
+    display: flex;
+    flex-direction: column;
+  width: 100%;
+  max-width: 400px; 
+  background-color: white; 
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px black,
+  8px 5px 15px rgb(32, 31, 31);
+  cursor: pointer;
+  
+ }
+ form input{
+    width: 100%;
+    height: 55px;
+    padding: 0 15px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+ }
+form input:focus{
+    border-color: blue;
+    outline: none;
+}
+::placeholder{
+    color: #777;
+    font-size: 0.890rem;
+}
+.login{
+  text-align: center;
+  gap: 15px;
+  display: flex;
+  flex-direction: column; 
+    
+}
+.btn{
+    height: 50px;
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 400px;
+    border: 2px solid blue;
+    border-radius: 5px;
+    background-color: blue;
+    font: bold;
+    font: bolder;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: blue;
+}
+a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+hr{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #ccc;
+    border-radius: 1px;
+    height: 1px;
+}
+.crt-acc{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+ 
+}
+.crt-acc .ks{
+   padding: 20px 30px;
+   color: white;
+   background-color: rgb(10, 189, 4);
+   border-radius: 7px;
+   font-size: 1.03rem;
+   font-weight: 600;
+   text-decoration: none;
+   transition: 0.5s ease;
+}
+.ks:hover{
+    background-color: #3ba626;
+}
+
+
+@media(max-width: 700px){
+    .fb-page{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .fb-page .text{
+        margin-bottom: 30px;
+    }
+}
